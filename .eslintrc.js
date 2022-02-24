@@ -15,9 +15,7 @@ module.exports = defineConfig({
     browser: true,
     node: true,
   },
-  globals: {
-    jest: 'readonly',
-  },
+  globals: {},
   plugins: ['@typescript-eslint', 'prettier', 'import'],
   extends: [
     'eslint:recommended',
