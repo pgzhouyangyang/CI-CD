@@ -3,8 +3,7 @@ on:
   push:
     branches: [ dev ]
 jobs:
-  # This workflow contains a single job called "build"
-  lint-and-build:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
