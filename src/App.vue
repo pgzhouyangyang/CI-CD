@@ -11,7 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <div>
     <div>
       <div>
-        <div>pull_request</div>
+        <div>hello</div>
       </div>
     </div>
   </div>
