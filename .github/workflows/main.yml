@@ -39,6 +39,6 @@ jobs:
             ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-
             ${{ runner.os }}-${{ matrix.node-version }}-test-
             ${{ runner.os }}-
-     - name: Install dependencies
-       run: pnpm i --frozen-lockfile
-     - run: pnpm lint
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+      - run: pnpm lint
