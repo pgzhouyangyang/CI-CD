@@ -24,26 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
         with:
-         node-version: '14.x'
-     
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+          persist-credentials: false
 
       - name: Run linter
-        run: npm run lint
-
-  build:
-     runs-on: ubuntu-latest
-     steps:
-     - uses: actions/checkout@v2
-     - uses: actions/setup-node@v1
-       with:
-         node-version: '12.x'
- 
-     - name: Install dependencies
-       uses: bahmutov/npm-install@v1
- 
-     - name: Build
-       run: npm run build
+        run: |
+          npm install
+          npm run lint
+          npm run build
