@@ -5,14 +5,14 @@ module.exports = {
       2,
       'always',
       [
-        'feature',
-        'update',
-        'fixbug',
-        'refactor',
-        'optimize',
-        'style',
-        'docs',
-        'chore',
+        'feature', // 增加新功能
+        'update', // 变更
+        'fixbug', // bug
+        'refactor', // 重构
+        'optimize', // 优化
+        'style', //格式（不影响代码运行的变动）
+        'docs', // 文档（documentation）
+        'chore', // 构建过程或辅助工具的变动
       ],
     ],
     'type-case': [0],
