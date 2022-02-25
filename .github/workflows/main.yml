@@ -11,6 +11,6 @@ jobs:
       - uses: actions/setup-node@master # 设置 NodeJS 环境
       - name: Install and Build 🔧 
         run: |
-          npm install
+          npm i --legacy-peer-deps
           npm run lint
           npm run build
